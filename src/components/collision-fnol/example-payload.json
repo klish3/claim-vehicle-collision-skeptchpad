@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "MOTOR_COLLISION_FNOL",
+  "clientSubmissionId": "193e29d6-4ffb-4c3a-adff-68c670fd547d",
+  "createdAt": "2026-09-27T17:07:01.001Z",
+  "incident": {
+    "occurredAt": null,
+    "timezone": "Europe/London",
+    "collisionWith": "VEHICLE_AND_OBJECT",
+    "location": {
+      "source": "SEARCH",
+      "query": "Bridge Street, Guildford",
+      "label": "Bridge Street, Guildford Park, Guildford, GU1 4SB",
+      "coordinates": {
+        "lat": 51.2365218,
+        "lng": -0.5783961
+      },
+      "road": "Bridge Street",
+      "postcode": "GU1 4SB",
+      "town": "Guildford",
+      "provider": "photon",
+      "providerRef": "W4662139"
+    },
+    "summary": [
+      "Location: Bridge Street, Guildford Park, Guildford, GU1 4SB (drawn on the map).",
+      "Vehicle A (your car): moving, facing north-west.",
+      "Vehicle B (other car): moving, facing west.",
+      "Object O1: wall.",
+      "Movement 1: Vehicle A turning right, about 15 m, heading east.",
+      "Movement 2: Vehicle B going straight, about 8 m, heading west.",
+      "Impact point 1: on vehicle B."
+    ]
+  },
+  "diagram": {
+    "backdrop": {
+      "mode": "MAP",
+      "layout": null,
+      "layoutRotationDeg": 0,
+      "mapLayer": "esri-streets",
+      "tileSource": "server.arcgisonline.com"
+    },
+    "frame": {
+      "origin": {
+        "lat": 51.2365218,
+        "lng": -0.5783961
+      },
+      "units": "metres",
+      "axes": "x=east,y=north",
+      "headingReference": "TRUE_NORTH"
+    },
+    "vehicles": [
+      {
+        "id": "A",
+        "role": "POLICYHOLDER",
+        "kind": "CAR",
+        "motion": "MOVING",
+        "position": {
+          "x": -1.66,
+          "y": -9.12
+        },
+        "latLng": {
+          "lat": 51.2364398,
+          "lng": -0.5784199
+        },
+        "headingDeg": 337,
+        "headingCompass": "NW",
+        "headingSetByUser": false,
+        "lengthM": 4.5,
+        "widthM": 1.85,
+        "movementIds": [
+          "M1"
+        ]
+      },
+      {
+        "id": "B",
+        "role": "THIRD_PARTY",
+        "kind": "CAR",
+        "motion": "MOVING",
+        "position": {
+          "x": 10.78,
+          "y": 0.83
+        },
+        "latLng": {
+          "lat": 51.2365293,
+          "lng": -0.5782414
+        },
+        "headingDeg": 270,
+        "headingCompass": "W",
+        "headingSetByUser": true,
+        "lengthM": 4.5,
+        "widthM": 1.85,
+        "movementIds": [
+          "M2"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "id": "O1",
+        "kind": "WALL",
+        "position": {
+          "x": -18.25,
+          "y": 12.44
+        },
+        "latLng": {
+          "lat": 51.2366336,
+          "lng": -0.5786579
+        },
+        "headingDeg": 0,
+        "lengthM": 6,
+        "widthM": 0.5
+      }
+    ],
+    "movements": [
+      {
+        "id": "M1",
+        "sequence": 1,
+        "vehicleId": "A",
+        "path": {
+          "from": {
+            "x": -1.66,
+            "y": -9.12
+          },
+          "control": {
+            "x": -5.81,
+            "y": 0.41
+          },
+          "to": {
+            "x": 3.32,
+            "y": 1.66
+          }
+        },
+        "fromLatLng": {
+          "lat": 51.2364398,
+          "lng": -0.5784199
+        },
+        "toLatLng": {
+          "lat": 51.2365367,
+          "lng": -0.5783485
+        },
+        "lengthM": 14.71,
+        "startBearingDeg": 337,
+        "endBearingDeg": 82,
+        "turnDeg": 106,
+        "manoeuvre": "RIGHT_TURN"
+      },
+      {
+        "id": "M2",
+        "sequence": 2,
+        "vehicleId": "B",
+        "path": {
+          "from": {
+            "x": 9.78,
+            "y": 0.83
+          },
+          "control": {
+            "x": 5.64,
+            "y": 0.91
+          },
+          "to": {
+            "x": 1.49,
+            "y": 1
+          }
+        },
+        "fromLatLng": {
+          "lat": 51.2365293,
+          "lng": -0.5782558
+        },
+        "toLatLng": {
+          "lat": 51.2365307,
+          "lng": -0.5783747
+        },
+        "lengthM": 8.3,
+        "startBearingDeg": 271,
+        "endBearingDeg": 271,
+        "turnDeg": 0,
+        "manoeuvre": "STRAIGHT"
+      }
+    ],
+    "impactPoints": [
+      {
+        "id": "X1",
+        "position": {
+          "x": 7.3,
+          "y": 0.83
+        },
+        "latLng": {
+          "lat": 51.2365293,
+          "lng": -0.5782914
+        },
+        "nearItemIds": [
+          "B"
+        ]
+      }
+    ],
+    "contacts": [],
+    "snapshotSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1158\" height=\"440\" viewBox=\"0 0 1158 440\" font-family=\"system-ui, -apple-system, Segoe UI, Roboto, sans-serif\" cl… (truncated for this example; the real value is the full SVG, ~10 KB)"
+  },
+  "validation": {
+    "warnings": [
+      "You haven’t said when it happened."
+    ]
+  },
+  "client": {
+    "component": "CollisionFnol",
+    "version": "1.0.0",
+    "locale": "en-US"
+  }
+}

@@ -1,0 +1,124 @@
+.app-header {
+  background: #0b5cad;
+  color: #fff;
+}
+
+.app-header-inner {
+  /* 1200px content (matches the form) plus the side padding. */
+  max-width: calc(1200px + 2rem);
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.app-mark {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  flex: none;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 650;
+}
+
+.app-subtitle {
+  margin: 0.1rem 0 0;
+  opacity: 0.85;
+  font-size: 0.925rem;
+}
+
+.app-main {
+  padding: 1.25rem 1rem 3rem;
+}
+
+.payload {
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  background: #fff;
+  border: 1px solid #d3d8df;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.payload-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.payload-head h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.payload-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.payload-actions button {
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #d3d8df;
+  background: #fff;
+  color: #1b1f24;
+  cursor: pointer;
+}
+
+.payload-actions button:hover {
+  background: #f4f6f8;
+}
+
+.payload-actions button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(11, 92, 173, 0.35);
+}
+
+.payload-snapshot {
+  margin: 0 0 1rem;
+}
+
+.payload-snapshot > div {
+  border: 1px solid #d3d8df;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f4f6f8;
+}
+
+.payload-snapshot svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+}
+
+.payload-snapshot figcaption {
+  font-size: 0.85rem;
+  color: #5b6470;
+  margin-top: 0.35rem;
+}
+
+.payload-json {
+  margin: 0;
+  max-height: 480px;
+  overflow: auto;
+  background: #0f172a;
+  color: #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
